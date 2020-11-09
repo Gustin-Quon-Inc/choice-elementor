@@ -1,0 +1,126 @@
+ /*
+ Theme Name: Choice Elementor
+ Description: Custom Elementor Theme
+ Author: Peter Jaffray
+ Author URI: https://choice.marketing
+ Template: hello-elementor
+ Version: 1
+ */
+
+
+
+
+ html { 
+  line-height: 1; 
+  -webkit-text-size-adjust: 100%; 
+ } 
+
+a { 
+color: #ffae00;
+}
+
+/*  
+  @CLASS 
+  .feature  
+
+*/
+.truncate250 {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.widescreen-only {
+  display: none;
+}
+
+@media screen and (min-width: 1921px) { 
+  html {
+    font-size: 20px;
+  } 
+  .widescreen-only {
+  display: inline-flex;
+  }
+  .widescreen-padding {
+    padding-right: 15vw;
+  }
+  body, input, ol li, p, textarea, ul li {
+    /* line-height: 1.75; */
+  }
+  .hide-desktop {
+    display: none !important; /* Secondary Menu in Header */
+  }
+  .hide-hr-desktop {
+    display: none !important; /* Secondary Menu in Header */
+  }
+} /* hr-desktop */
+
+@media screen and (min-width: 1026px) and (max-width: 1920px) {   
+  html {
+    font-size: 18px;
+  }
+
+  .widescreen-padding {
+    padding-right: 15vw;
+  }
+
+  body, input, ol li, p, textarea, ul li, .p1 {
+   /* line-height: 2.15; */
+  } 
+  .hide-desktop {
+    display: none !important; /* Secondary Menu in Header */
+  }
+} /* desktop */
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {    
+  html {
+    font-size: 14px;
+  }
+  body, input, ol li, p, textarea, ul li, .p1 {
+    /* line-height: 1.65; */
+  } 
+  .hide-tab {
+    display: none !important; /* Secondary Menu in Header */
+  }
+} /* tab */
+
+@media screen and (max-width: 767px) {                            
+  html {
+    font-size: 14px;
+  }
+  body, input, ol li, p, textarea, ul li, .p1 {
+   /* line-height: 1.85; */
+  } 
+  .hide-phone {
+    display: none !important; /* Secondary Menu in Header */
+  } 
+} /* phone */
+
+
+ *, *::before, *::after { 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+ }
+
+body, input, ol li, p, textarea, ul li, .p1 {
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  
+}
+
+
+
+li.menu-item.menu-item-type-post_type.menu-item-object-page.current-page-ancestor a {
+  background-color: inherit;
+}
+
+/**  Scaffolding **/
+
+.flex-1{
+  flex:1;
+}
+
